@@ -16,3 +16,24 @@ for (var i = 0; i<el.length;i++){
               localStorage.setItem("pageColor", this.getAttribute("data-color"))
        },false)
 }
+
+//
+
+
+
+var count = document.getElementById("count");
+var textarea = document.getElementById("text");
+var maxLength = textarea.getAttribute("maxlength");
+
+
+//function to change number of letters
+textarea.oninput = function() {
+
+       count.innerHTML = maxLength - this.value.length; 
+
+       if (count.innerHTML == 0) {
+              count.classList.add("zero")
+       } else {
+              count.classList.remove("zero")
+       }
+}
