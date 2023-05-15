@@ -53,3 +53,18 @@ textarea.onblur = function () {
        // Get Placeholder Attr From Backup Attribute
        this.setAttribute("placeholder", this.getAttribute("data-place"));
 }
+
+
+var myText = 'hello From Yousef World  this is type Writer Effects on Text';
+var myButton = document.getElementById("button");
+var i = 1;
+myButton.onclick = function (){
+       var typeWriter = setInterval( function(){
+              document.getElementById('type').textContent += myText[i];
+              i++
+              if ( i>myText.length-1) {
+                     clearInterval(typeWriter)
+                     i=0
+              }
+       },100);
+}
