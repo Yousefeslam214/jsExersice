@@ -37,3 +37,19 @@ textarea.oninput = function() {
               count.classList.remove("zero")
        }
 }
+
+
+textarea.onfocus = function () {
+
+       // store PlaceHoder Attr In Backup Attr
+       this.setAttribute("data-place", this.getAttribute("placeholder"));
+
+       //Empty Placeholder
+
+       this.setAttribute("placeholder","")
+}
+textarea.onblur = function () {
+
+       // Get Placeholder Attr From Backup Attribute
+       this.setAttribute("placeholder", this.getAttribute("data-place"));
+}
