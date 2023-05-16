@@ -17,7 +17,9 @@ for (var i = 0; i<el.length;i++){
        },false)
 }
 
-//
+
+
+
 
 
 
@@ -68,3 +70,66 @@ myButton.onclick = function (){
               }
        },100);
 }
+
+
+var passwardButton = document.getElementById("my-button");
+var myInput = document.getElementById("my-input");
+var toogleButton = document.getElementById("toogleButton");
+
+// Retrieve the value of the "storage" key from local storage
+var storage = localStorage.getItem("storage");
+
+// Set the initial value of the "disabled" attribute on the myInput element
+//myInput.setAttribute("disabled", storage === "disabled");
+
+
+// const isDisabled = myInput.getAttribute("disabled") === "disabled";
+
+// toogleButton.addEventListener("click", () => {
+//        // Toggle the value of the "disabled" attribute on the myInput element
+//        const isDisabled = myInput.getAttribute("disabled") === "disabled";
+//        myInput.setAttribute("disabled", !isDisabled);
+       
+//        // Store the new value of the "disabled" attribute in local storage
+//        localStorage.setItem("storage", isDisabled ? "enabled" : "disabled");
+//        console.log(isDisabled)
+// });
+
+// console.log(isDisabled)
+
+
+// var storage = localStorage.getItem( "storage","disabled")
+
+
+toogleButton.addEventListener("click", () => {
+       myInput.toggleAttribute(storage);
+       
+
+
+});
+
+
+
+passwardButton.onclick = function () {
+       if (this.textContent === "show your password"){
+       myInput.setAttribute("type","text")
+       this.textContent = "Hide Password"
+
+
+} else {
+       myInput.setAttribute("type","password")
+       this.textContent = "show your password"
+}}
+
+// // localStorage.getItem("toggle");
+// document.myInput.toggleAttribute = window.localStorage.getItem("toggle");
+
+// const toggleButtons = localStorage.setItem("toggle", myInput.toggleAttribute("type","text"))
+// console.log(toggleButtons)
+//window.localStorage.clear();
+
+
+
+// const myValue = localStorage.getItem("myKey");
+// const myImage = document.querySelector("#myImage");
+// myImage.setAttribute("src", myValue);

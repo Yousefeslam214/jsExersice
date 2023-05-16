@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 50px;
 }
 
 body {
@@ -89,8 +90,8 @@ body {
   color: white;
   padding: 10px;
 }
-form {
-  width: 50%;
+form ,button{
+  
   margin:10px  auto;
 }
 .zero{
