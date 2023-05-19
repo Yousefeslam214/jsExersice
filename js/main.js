@@ -188,6 +188,12 @@ window.onload = function () {
 }
 
 
+var myTextarea = document.getElementById('my-text')
+var mySpan = document.getElementById('my-span');
 
+myTextarea.onkeyup = function () {
+       mySpan.textContent = 50 - this.value.length;
+       mySpan.textContent<0?mySpan.style.color='#F00':mySpan.style.color='#000'
+}
 
 
