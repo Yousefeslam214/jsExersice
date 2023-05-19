@@ -141,3 +141,19 @@ var randomKey = Math.floor(Math.random() * classList.length);
 
 console.log(randomKey)
 document.body.setAttribute('class',classList[randomKey])
+
+var myTitle = document.getElementById('texts')
+var myContent = document.getElementById('message')
+var myTitleLive = document.getElementById('textcon')
+var myContentLive = document.getElementById('messagecon')
+
+
+myTitle.onkeyup = function () {
+       myTitleLive.textContent = this.value;
+}
+myContent.onkeyup = function () {
+       myContentLive.textContent = this.value;
+}
+
+
+
