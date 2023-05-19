@@ -97,3 +97,12 @@ form ,button{
 .zero{
   color: red;
 }
+
+.class-one  div  h1{color:#cf0300;}
+.class-one  div  p{color:#220202;}
+.class-two  div  h1{color:#9d0a0a;}
+.class-two  div  p{color:#18d36c;}
+.class-three div h1{color:#519d0a;}
+.class-three div p{color:#d318a7;}
+.class-four div  h1{color:#9d390a;}
+.class-four div  p{color:#b7d318;}

@@ -133,3 +133,11 @@ passwardButton.onclick = function () {
 // const myValue = localStorage.getItem("myKey");
 // const myImage = document.querySelector("#myImage");
 // myImage.setAttribute("src", myValue);
+
+
+
+var classList = ["class-one","class-two","class-three","class-four"]
+var randomKey = Math.floor(Math.random() * classList.length);
+
+console.log(randomKey)
+document.body.setAttribute('class',classList[randomKey])
