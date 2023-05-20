@@ -197,3 +197,19 @@ myTextarea.onkeyup = function () {
 }
 
 
+function redirectMe(url) {
+       window.location = url;
+}
+
+
+var ourInput = document.getElementById("ourinput");
+ourInput.onfocus = function () {
+       if (this.placeholder === "Type Your Name") {
+              this.placeholder ="";
+       }
+}
+ourInput.onblur = function () {
+       if (this.placeholder === "") {
+              this.placeholder ="Type Your Name";
+       }
+}
